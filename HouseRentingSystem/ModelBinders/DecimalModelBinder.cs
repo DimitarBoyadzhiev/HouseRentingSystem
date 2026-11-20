@@ -21,6 +21,7 @@ namespace HouseRentingSystem.ModelBinders
                     strValue = strValue.Replace(",", CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator);
 
                     result = Convert.ToDecimal(strValue, CultureInfo.CurrentCulture);
+                    success = true;
                 }
                 catch (FormatException ex)
                 {

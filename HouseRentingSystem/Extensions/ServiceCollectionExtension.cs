@@ -1,6 +1,5 @@
 ﻿using HouseRentingSystem.Core.Contracts;
 using HouseRentingSystem.Core.Services;
-using HouseRentingSystem.Core.Services.House;
 using HouseRentingSystem.Infrastructure.Data;
 using HouseRentingSystem.Infrastructure.Data.Common;
 using Microsoft.AspNetCore.Identity;
