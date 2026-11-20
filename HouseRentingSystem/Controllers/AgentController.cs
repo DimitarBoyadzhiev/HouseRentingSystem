@@ -35,7 +35,7 @@ namespace HouseRentingSystem.Controllers
                 ModelState.AddModelError(nameof(model.PhoneNumber), PhoneExists);
             }
 
-            if (await agentService.UserHasRentsAsync(User.Id()))
+            if (await agentService.UserHasRentsAsync(model.PhoneNumber))
             {
                 ModelState.AddModelError("Error", HasRents);
             }
